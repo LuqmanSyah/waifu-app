@@ -1,7 +1,7 @@
 // Fungsi untuk mengambil gambar dari API Waifu Pics
 async function getWaifuImage() {
   try {
-    const response = await fetch("https://api.waifu.pics/sfw/waifu");
+    const response = await fetch("https://api.waifu.pics/nsfw/waifu");
     const data = await response.json();
     const imageUrl = data.url;
 
